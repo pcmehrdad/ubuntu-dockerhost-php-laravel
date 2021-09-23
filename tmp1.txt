@@ -1,0 +1,15 @@
+sudo apt --yes install software-properties-common zsh curl make zip unzip git nano aria2 unar htop iotop poppler-utils traceroute nmap net-tools p7zip openssl bzip2 git wget iperf ntp openssh-server fail2ban
+sudo apt --yes install php-cli php-common php-curl php-json php-opcache php-readline php-fpm php-common php-mysql php-xml php-xmlrpc php-curl php-gd php-imagick php-cli php-dev php-imap php-pdo php-mbstring php-opcache php-soap php-zip php-calendar php-ctype php-exif php-ffi php-fileinfo php-ftp php-iconv php-phar php-posix php-shmop php-sockets php-sysvmsg php-sysvsem php-sysvshm php-tokenizer
+sudo apt --yes install composer
+
+
+
+
+
+
+
+
+
+
+
+ln -s /root/.config/composer/vendor/laravel/installer/bin/laravel /usr/bin/laravel

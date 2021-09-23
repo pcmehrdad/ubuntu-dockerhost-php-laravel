@@ -1,0 +1,55 @@
+sudo -i
+passwd
+echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+sed -i 's/#Port 22/Port 6070/g' /etc/ssh/sshd_config
+systemctl restart ssh
+apt update --yes
+apt upgrade --yes
+reboot
+
+
+======================================================
+
+## enable root user + ssh login
+sudo -i
+passwd
+systemctl restart ssh
+
+# go with putty normal user
+ssh user@192.168.1.140
+su
+sudo echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+sed -i 's/#Port 22/Port 6070/g' /etc/ssh/sshd_config
+service ssh restart
+sudo apt update && sudo apt upgrade
+apt-get --yes install zsh curl make unzip git nano
+reboot
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+02-docker+compose.sh
+
+=========================================================================================================
+
+apt install apt install composer --yes
+//php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+//php composer-setup.php
+
+=========================================
+sudo composer global require laravel/installer
+alias sail='bash vendor/bin/sail' => /root/.bashrc
+alias sail='bash vendor/bin/sail' => /home/mehrdad/.bashrc
+
+
+================================================
+cd /home/mehrdad/projects/laravel
+laravel new chapaar
+
+
+
+--------------------------------------------------
+fresh:
+curl -s https://laravel.build/example-app | bash
+cd chapaar
+./vendor/bin/sail up

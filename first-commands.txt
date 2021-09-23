@@ -1,0 +1,6 @@
+sudo -i
+passwd
+echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+sed -i 's/#Port 22/Port 6070/g' /etc/ssh/sshd_config
+service ssh restart
+sudo apt update && sudo apt upgrade
