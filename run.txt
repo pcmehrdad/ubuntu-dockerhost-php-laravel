@@ -1,0 +1,1 @@
+cd ~ && curl -o dockerhost-portainer-laravel.sh -L https://raw.githubusercontent.com/pcmehrdad/ubuntu-dockerhost-php-laravel/main/dockerhost-portainer-laravel.sh && sh dockerhost-portainer-laravel.sh

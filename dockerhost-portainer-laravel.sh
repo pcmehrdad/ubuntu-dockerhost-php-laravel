@@ -51,11 +51,11 @@ sudo docker run -d -p 8000:8000 -p 9999:9000 --name=portainer --restart=always -
 ### global installer
 composer global require laravel/installer --update-with-all-dependencies
 echo 'export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+# source ~/.bashrc
 # sudo chown -R $USER:$USER /home/$USER/.config/composer
 ### sail install alias
 echo "alias sail='./vendor/bin/sail'" >> ~/.bash_aliases
-source ~/.bash_aliases
+# source ~/.bash_aliases
 
 rm -f dockerhost-portainer-laravel.sh
 
