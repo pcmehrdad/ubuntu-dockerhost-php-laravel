@@ -7,7 +7,6 @@ apt update --yes
 apt upgrade --yes
 reboot
 
-
 ======================================================
 
 ## enable root user + ssh login
